@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Select_Shift">
+
+    <TextView
+        android:id="@+id/SELECT_CAMPUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="28dp"
+        android:text="SELECT CAMPUS" />
+
+    <TextView
+        android:id="@+id/SLECT_TIME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginRight="166dp"
+        android:text="SELECT TIME" />
+
+    <TextView
+        android:id="@+id/SELECT_TEAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/SELECT_CAMPUS"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="254dp"
+        android:text="SELECT TEAM" />
+
+    <Button
+        android:id="@+id/Select_Shift_Continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/SLECT_TIME"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="70dp"
+        android:text="Continue" />
+
+    <RadioGroup
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="66dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/WestRadio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="WEST" />
+
+        <RadioButton
+            android:id="@+id/EastRadio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EAST" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="199dp"
+        android:layout_height="43dp"
+        android:layout_alignStart="@+id/SELECT_CAMPUS"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_marginStart="-22dp"
+        android:layout_marginTop="179dp" >
+
+        <RadioButton
+            android:id="@+id/SetUP_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SETUP" />
+
+        <RadioButton
+            android:id="@+id/TearDown_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TEARDOWN" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Select_Shift_Continue_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-103dp"
+
+        android:layout_marginBottom="218dp"
+        android:orientation="horizontal"
+        android:layout_alignLeft="@+id/Select_Shift_Continue_btn">
+
+        <RadioButton
+            android:id="@+id/Team1_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/Team2_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/Team3_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/Team4_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4" />
+    </RadioGroup>
+
+</RelativeLayout>
